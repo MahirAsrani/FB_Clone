@@ -1,0 +1,484 @@
+.font-family {
+  font-family: 'Poppins', sans-serif;
+}
+.font-size {
+  font-size: 15px;
+}
+
+.round-img {
+  clip-path: circle();
+}
+.icon-bg {
+  background-color: #e4e5eb;
+}
+.incoming {
+  font-size: 12px;
+}
+.profile-pic {
+  height: 100px;
+  width: 100px;
+}
+.small-round-pic {
+  height: 38px;
+  width: 38px;
+}
+.scroll {
+  height: 50%;
+  overflow-y: auto;
+}
+.scroll-mid {
+  height: 885px;
+  overflow-y: auto;
+}
+.side-height {
+  height: 850px;
+}
+.coverpic {
+  height: 200px;
+  width: 100%;
+}
+.profilepic {
+  width: 150px;
+  height: 150px;
+}
+.size {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+}
+.profile-sidebar {
+  height: 800px;
+}
+.mid {
+  margin-top: -80px;
+  margin-left: 50px;
+}
+
+.friend-req {
+  border: 2px solid #f1f1f1;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px #f0f0f0;
+}
+.post {
+  display: none;
+  visibility: none;
+}
+.circle {
+  clip-path: circle(50% at 50% 50%);
+}
+
+.pointer {
+  cursor: pointer;
+}
+.position-abs {
+  position: absolute;
+  top: 20%;
+}
+.myFile {
+  outline: none;
+  color: transparent;
+  box-sizing: border-box;
+  cursor: pointer;
+  width: 50px;
+  transition: 0.5s;
+}
+.myFile::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.myFile::before {
+  content: '\f1c5';
+  font-family: fontAwesome;
+  font-size: 30px;
+  color: green;
+  display: inline-block;
+  user-select: none;
+}
+
+.friend-req {
+  border: 2px solid #f1f1f1;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px #f0f0f0;
+}
+
+.camera {
+  outline: none;
+  color: transparent;
+  box-sizing: border-box;
+  cursor: pointer;
+  width: 50px;
+  transition: 0.5s;
+}
+.camera::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.camera::before {
+  content: '\f030';
+  font-family: fontAwesome;
+  font-size: 30px;
+  color: black;
+  display: inline-block;
+  user-select: none;
+  margin-left: 15px;
+}
+.camera:hover {
+  background-color: #f0f2f5;
+}
+.sticky {
+  position: sticky;
+  top: 0;
+}
+.reportedPic {
+  height: 300px;
+  width: 100%;
+}
+.text-comment {
+  max-height: 70px;
+  overflow: hidden;
+}
+
+.seemore {
+  cursor: pointer;
+  color: #69696d;
+  text-align: end;
+  /* margin: 5px 10px; */
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+.login-panel {
+  min-height: 75%;
+}
+.viewport-height {
+  height: 100vh;
+}
+#logo-img {
+  background-image: url('https://mma.prnewswire.com/media/728150/TO_THE_NEW_Logo.jpg?p=facebook');
+  height: 70px;
+  width: 110px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.resp-hide {
+  display: flex;
+}
+
+.row-span {
+  grid-row: 1 / span 2;
+}
+@media screen and (max-width: 700px) {
+  .sticky {
+    display: none;
+    position: static;
+    top: 0;
+  }
+  .viewport-height {
+    height: 100%;
+  }
+  #logo-img {
+    background-image: url('../public/TO_THE_NEW_Logo.jpg');
+    height: 50px;
+    width: 50px;
+    background-size: 50px;
+    background-repeat: no-repeat;
+  }
+  .resp-hide {
+    display: none;
+  }
+}
+
+.pickFile {
+  font-weight: 500;
+  color: #69696d;
+  /* border: 2px solid #198754; */
+  border-radius: 10px;
+}
+.pickFile:hover {
+  background-color: #f3f3f3;
+}
+.pickFile i {
+  font-size: 1.5rem;
+  color: #198754;
+  margin-right: 5px;
+}
+
+.lds-facebook {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-facebook div {
+  display: inline-block;
+  position: absolute;
+  left: 8px;
+  width: 16px;
+  background: #fff;
+  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+.lds-facebook div:nth-child(1) {
+  left: 8px;
+  animation-delay: -0.24s;
+}
+.lds-facebook div:nth-child(2) {
+  left: 32px;
+  animation-delay: -0.12s;
+}
+.lds-facebook div:nth-child(3) {
+  left: 56px;
+  animation-delay: 0;
+}
+@keyframes lds-facebook {
+  0% {
+    top: 8px;
+    height: 64px;
+  }
+  50%,
+  100% {
+    top: 24px;
+    height: 32px;
+  }
+}
+
+/* messenger css */
+
+.imagechatbg {
+  background: url('./images/bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.chatbubble {
+  max-width: 70%;
+}
+
+.chatbubble .time {
+  font-size: 0.8rem;
+  color: #767676;
+  font-weight: 500;
+  padding: 0 15px;
+}
+
+.chatbubble .bubbletext {
+  background-color: #ededed;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border-top-left-radius: 0px;
+  text-align: left;
+  max-width: max-content;
+}
+
+.chatbubble .bubbletext p {
+  font-size: 1.2rem;
+}
+
+.chatbubble .file-unknwon {
+  font-size: 1rem;
+  color: white;
+}
+
+.myMessage {
+  justify-content: flex-end;
+  margin-left: auto;
+}
+.myMessage .bubbletext {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 0px;
+}
+
+.myMessage .rowalign {
+  justify-content: flex-end;
+}
+.myMessage .bubbletext {
+  background-color: #162e48;
+  margin-left: auto;
+  color: white;
+}
+
+.snackbar {
+  box-shadow: 0px 0px 10px #c7c6c64f;
+}
+
+.iconIninput {
+  position: relative;
+}
+.iconIninput > i {
+  position: absolute;
+  top: 30%;
+  bottom: 0;
+  left: 2%;
+  color: #6d7073;
+}
+
+.iconIninput > input {
+  padding-left: 30px;
+}
+
+.chatinput .input-file {
+  right: 14%;
+  bottom: 25%;
+  font-size: 25px;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.chatinput .file-upload-preview:hover {
+  background-color: #ffe9e5;
+}
+.chatinput .file-upload-preview {
+  position: absolute;
+  bottom: 120%;
+  max-width: 250px;
+  max-height: 40px;
+  right: 0;
+  background-color: white;
+  padding: 10px;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 05px;
+}
+.chatinput .preview {
+  position: absolute;
+  bottom: 120%;
+  max-width: 250px;
+  max-height: 100px;
+  right: 0;
+  cursor: pointer;
+}
+.seen {
+  font-size: 14px !important;
+  margin: 0;
+  text-align: right;
+  color: #5441ff;
+}
+
+.callNotify {
+  /* width: 400px; */
+  min-height: 20px;
+  background-color: white;
+  padding: 15px;
+  box-sizing: content-box;
+  right: 10px;
+  top: 10px;
+  position: fixed;
+  box-shadow: 5px 5px 20px rgb(219, 219, 219);
+  border-radius: 20px;
+  z-index: 100;
+}
+
+.callNotify img {
+  border-radius: 500px;
+  width: 80px;
+  height: auto;
+  margin: 0 5px;
+}
+
+.callNotify .callbtn {
+  border-radius: 500px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  font-weight: 600;
+  min-width: 120px;
+}
+.callNotify i {
+  margin-right: 10px;
+}
+
+.callNotify .accept {
+  background-color: #198754;
+  color: white;
+}
+.callNotify .reject {
+  background-color: #d6422b;
+  color: white;
+}
+
+.vc {
+  width: 45px;
+  height: 45px;
+  background: #dbdbdb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 500px;
+  cursor: pointer;
+}
+
+.parent-vc {
+  height: calc(100vh - 70px);
+}
+.remoteVideoScreen {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #2f2f2f;
+}
+
+.myvideoScreen {
+  height: 20vh;
+  width: 200px;
+  padding: 0;
+  margin: 30px;
+  border-radius: 20px;
+  border: rgb(214, 214, 214) 3px solid;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.vcdock {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 40px 0;
+}
+
+.vcdock .icon-roundbox {
+  background-color: white;
+  border-radius: 100px;
+  width: 65px;
+  height: 65px;
+  box-shadow: 0 0 25px rgb(108, 108, 108);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.vcdock .icon-roundbox i {
+  font-size: 2rem;
+}
+.vcdock .icon-roundbox.bg-danger {
+  background: rgb(114, 40, 40);
+  color: white;
+  box-shadow: 0 0 25px rgb(108, 62, 62);
+  transform: rotate(140deg);
+}
+
+.vc-dc {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: white;
+  text-align: center;
+}
+
+.vc-dc img {
+  border-radius: 100px;
+  margin: 15px 0;
+}
+
+.replyTo {
+  font-size: 14px;
+  font-weight: 600;
+  color: #60599c;
+  cursor: pointer;
+}
